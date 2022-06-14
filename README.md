@@ -13,7 +13,7 @@ Once you downloaded it put it in the folder, then connect your account.
 
 ### 3) Start the installer.bat
 
-### 4) Start the ServerRunner.exe or ServerRunner.py file
+### 4) Start the ServerRunner.py file
 
 # Tips
 
