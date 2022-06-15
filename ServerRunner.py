@@ -43,7 +43,7 @@ def menu():
     elif option == 'Monitor CPU and RAM usage':
         monitor()
 
-# backup 
+# backup
 
 def backup():
     os.system('cls')
@@ -51,7 +51,7 @@ def backup():
     menu()
 
 
-# monitor 
+# monitor
 
 def get_cpu_usage_pct():
     return psutil.cpu_percent(interval=0.5)
@@ -71,9 +71,6 @@ def monitor():
         print(f'''{Fore.RED}Couldn't find ServerRunner.py{Fore.WHITE}''')
         time.sleep(0.5)
         menu()
-
-
-# setup # kell spigot, paper, vanilla 1.7-től 1.19-ig
 
 special_characters = '''abcdefghijklmnopqrstuvwxyz0123456789-_'''
 
