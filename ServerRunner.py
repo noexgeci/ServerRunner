@@ -150,7 +150,7 @@ def setup():
         else:
             os.system('cls')
             print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
-            os.mkdir(folder)
+            os.rmdir(folder)
             time.sleep(3)
             menu()
 
@@ -218,7 +218,7 @@ def setup():
         else:
             os.system('cls')
             print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
-            os.mkdir(folder)
+            os.rmdir(folder)
             time.sleep(3)
             menu()
 
@@ -278,13 +278,13 @@ def setup():
         else:
             os.system('cls')
             print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
-            os.mkdir(folder)
+            os.rmdir(folder)
             time.sleep(3)
             menu()
     else:
         os.system('cls')
         print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
-        os.mkdir(folder)
+        os.rmdir(folder)
         time.sleep(3)
         menu()
 

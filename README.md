@@ -1,5 +1,6 @@
 # ServerRunner
-A Minecraft Server Runner Tool Written in Python
+* A Minecraft Server Runner Tool Written in Python
+* Join to our Discord for any help https://discord.gg/MfJ2R7ZzhM
 
 # Setup
 
@@ -18,3 +19,4 @@ Once you downloaded it put it in the folder, then connect your account.
 # Tips
 
 * If you have never used this tool, then you should start with setting up a server
+
