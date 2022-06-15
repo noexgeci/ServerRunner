@@ -17,4 +17,4 @@ Once you downloaded it put it in the folder, then connect your account.
 
 # Tips
 
-### If you have never used this tool, then you should start with setting up a server
+* If you have never used this tool, then you should start with setting up a server
