@@ -81,61 +81,210 @@ def setup():
     else:
         print(f'''{Fore.RED}Invalid character(s).{Fore.WHITE}''')
         setup()
-    title = f'Select a Server Version: '
-    options = ['1.7', '1.8', '1.12', '1.16', '1.17', '1.18']
-    option, index = pick(options, title, indicator='=>', default_index=0)
 
-    if option == '1.18':
-        os.system('cls')
-        print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
-        f = open(f"{folder}/eula.txt", "a")
-        f.write("eula=true")
-        f.close()
-        os.system('curl "https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar" --output ' + folder + '/' + 'server.jar')
-        menu()
-    elif option == '1.17':
-        os.system('cls')
-        print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
-        f = open(f"{folder}/eula.txt", "a")
-        f.write("eula=true")
-        f.close()
-        os.system('curl "https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar" --output ' + folder + '/' + 'server.jar')
-        menu()
-    elif option == '1.16':
-        os.system('cls')
-        print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
-        f = open(f"{folder}/eula.txt", "a")
-        f.write("eula=true")
-        f.close()
-        os.system('curl "https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar" --output ' + folder + '/' + 'server.jar')
-        menu()
-    elif option == '1.12':
-        os.system('cls')
-        print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
-        f = open(f"{folder}/eula.txt", "a")
-        f.write("eula=true")
-        f.close()
-        os.system('curl "https://launcher.mojang.com/v1/objects/8494e844e911ea0d63878f64da9dcc21f53a3463/server.jar" --output ' + folder + '/' + 'server.jar')
-        menu()
-    elif option == '1.8':
-        os.system('cls')
-        print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
-        f = open(f"{folder}/eula.txt", "a")
-        f.write("eula=true")
-        f.close()
-        os.system('curl "https://launcher.mojang.com/v1/objects/b58b2ceb36e01bcd8dbf49c8fb66c55a9f0676cd/server.jar" --output ' + folder + '/' + 'server.jar')
-        menu()
-    elif option == '1.7':
-        os.system('cls')
-        print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
-        f = open(f"{folder}/eula.txt", "a")
-        f.write("eula=true")
-        f.close()
-        os.system('curl "https://launcher.mojang.com/v1/objects/c69ebfb84c2577661770371c4accdd5f87b8b21d/server.jar" --output ' + folder + '/' + 'server.jar')
-        menu()
+    titletype = f'Select a Server Type: '
+    optionstype = ['Vanilla', 'Spigot', 'Paper']
+    optiontype, index = pick(optionstype, titletype, indicator='=>', default_index=0)
+
+    if optiontype == "Vanilla":
+        title = f'Select a Server Version: '
+        options = ['1.7', '1.8', '1.12', '1.16', '1.17', '1.18','1.19']
+        option, index = pick(options, title, indicator='=>', default_index=0)
+
+        if option == '1.19':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        if option == '1.18':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.17':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.16':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.12':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://launcher.mojang.com/v1/objects/8494e844e911ea0d63878f64da9dcc21f53a3463/server.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.8':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://launcher.mojang.com/v1/objects/b58b2ceb36e01bcd8dbf49c8fb66c55a9f0676cd/server.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.7':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://launcher.mojang.com/v1/objects/c69ebfb84c2577661770371c4accdd5f87b8b21d/server.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        else:
+            os.system('cls')
+            print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
+            os.mkdir(folder)
+            time.sleep(3)
+            menu()
+
+    elif optiontype == "Spigot":
+        title = f'Select a Server Version: '
+        options = ['1.7', '1.8', '1.12', '1.16', '1.17', '1.18', '1.19']
+        option, index = pick(options, title, indicator='=>', default_index=0)
+
+        if option == '1.19':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://download.getbukkit.org/spigot/spigot-1.19.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        if option == '1.18':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://download.getbukkit.org/spigot/spigot-1.18.2.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.17':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://download.getbukkit.org/spigot/spigot-1.17.1.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.16':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://cdn.getbukkit.org/spigot/spigot-1.16.5.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.12':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.8':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.7':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://cdn.getbukkit.org/spigot/spigot-1.7.10-SNAPSHOT-b1657.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        else:
+            os.system('cls')
+            print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
+            os.mkdir(folder)
+            time.sleep(3)
+            menu()
+
+    elif optiontype == "Paper":
+        title = f'Select a Server Version: '
+        options = ['1.8', '1.12', '1.16', '1.17', '1.18', '1.19']
+        option, index = pick(options, title, indicator='=>', default_index=0)
+
+        if option == '1.19':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://api.papermc.io/v2/projects/paper/versions/1.19/builds/14/downloads/paper-1.19-14.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        if option == '1.18':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/379/downloads/paper-1.18.2-379.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.17':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://papermc.io/api/v2/projects/paper/versions/1.17.1/builds/408/downloads/paper-1.17.1-408.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.16':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://papermc.io/api/v2/projects/paper/versions/1.16.5/builds/790/downloads/paper-1.16.5-790.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.12':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://papermc.io/api/v2/projects/paper/versions/1.12.2/builds/1618/downloads/paper-1.12.2-1618.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        elif option == '1.8':
+            os.system('cls')
+            print(f'{Fore.BLACK}{Back.WHITE}Started downloading the server jar{Back.BLACK}{Fore.WHITE} \n')
+            f = open(f"{folder}/eula.txt", "a")
+            f.write("eula=true")
+            f.close()
+            os.system('curl "https://papermc.io/api/v2/projects/paper/versions/1.8.8/builds/443/downloads/paper-1.8.8-443.jar" --output ' + folder + '/' + 'server.jar')
+            menu()
+        else:
+            os.system('cls')
+            print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
+            os.mkdir(folder)
+            time.sleep(3)
+            menu()
     else:
         os.system('cls')
         print(f'''{Fore.RED}Couldn't set up the server{Fore.WHITE}''')
+        os.mkdir(folder)
         time.sleep(3)
         menu()
 
