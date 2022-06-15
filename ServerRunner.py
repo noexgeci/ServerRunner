@@ -66,7 +66,7 @@ def monitor():
         time.sleep(2.5)
         os.system('start ServerRunner.py')
         while True:
-            print('This window is now used for monitoring, opened a new ServerRunner\n \nRAM usage is {Fore.}{} MB'.format(int(get_ram_usage() / 1024 / 1024)) + '\nSystem CPU load is {} %'.format(get_cpu_usage_pct()) + '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+            print('This window is now used for monitoring, opened a new ServerRunner\n \nRAM usage is {} MB'.format(int(get_ram_usage() / 1024 / 1024)) + '\nSystem CPU load is {} %'.format(get_cpu_usage_pct()) + '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
     else:
         print(f'''{Fore.RED}Couldn't find ServerRunner.py{Fore.WHITE}''')
         time.sleep(0.5)
