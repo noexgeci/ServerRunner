@@ -1,6 +1,6 @@
 # ServerRunner
-A Minecraft Server Runner Tool Written in Python
-Join to our Discord for any help https://discord.gg/MfJ2R7ZzhM
+* A Minecraft Server Runner Tool Written in Python
+* Join to our Discord for any help https://discord.gg/MfJ2R7ZzhM
 
 # Setup
 
