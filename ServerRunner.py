@@ -336,6 +336,16 @@ def manage():
 
     Are you sure you want to reset all the files? (y/n): ''')
             if sure == ('y'):
+                if os.path.isdir(f'{folder}/cache'):
+                    shutil.rmtree(f'{folder}/cache')
+                    print(f'{Fore.GREEN}Successfully removed cache')
+                else:
+                    print(f"{Fore.RED}The file does not exist{Fore.WHITE}")
+                if os.path.isdir(f'{folder}/config'):
+                    shutil.rmtree(f'{folder}/config')
+                    print(f'{Fore.GREEN}Successfully removed config')
+                else:
+                    print(f"{Fore.RED}The file does not exist{Fore.WHITE}")
                 if os.path.isdir(f'{folder}/libraries'):
                     shutil.rmtree(f'{folder}/libraries')
                     print(f'{Fore.GREEN}Successfully removed libraries')
@@ -344,6 +354,11 @@ def manage():
                 if os.path.isdir(f'{folder}/logs'):
                     shutil.rmtree(f'{folder}/logs')
                     print(f'{Fore.GREEN}Successfully removed logs')
+                else:
+                    print(f"{Fore.RED}The file does not exist{Fore.WHITE}")
+                if os.path.isdir(f'{folder}/plugins'):
+                    shutil.rmtree(f'{folder}/plugins')
+                    print(f'{Fore.GREEN}Successfully removed plugins')
                 else:
                     print(f"{Fore.RED}The file does not exist{Fore.WHITE}")
                 if os.path.isdir(f'{folder}/versions'):
@@ -369,6 +384,16 @@ def manage():
                 if os.path.exists(f'{folder}/banned-players.json'):
                     os.remove(f'{folder}/banned-players.json')
                     print(f'{Fore.GREEN}Successfully removed banned-players.json')
+                else:
+                    print(f"{Fore.RED}The file does not exist{Fore.WHITE}")
+                if os.path.isdir(f'{folder}/bukkit.yml'):
+                    shutil.rmtree(f'{folder}/bukkit.yml')
+                    print(f'{Fore.GREEN}Successfully removed bukkit.yml')
+                else:
+                    print(f"{Fore.RED}The file does not exist{Fore.WHITE}")
+                if os.path.isdir(f'{folder}/commands.yml'):
+                    shutil.rmtree(f'{folder}/commands.yml')
+                    print(f'{Fore.GREEN}Successfully removed commands.yml')
                 else:
                     print(f"{Fore.RED}The file does not exist{Fore.WHITE}")
                 if os.path.exists(f'{folder}/ops.json'):
