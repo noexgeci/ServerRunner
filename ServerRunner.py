@@ -8,6 +8,10 @@ import os
 import time
 import sys
 
+# startup
+
+os.system('title Loading...')
+
 # findprocessbyname
 
 def checkIfProcessRunning(processName):
@@ -18,10 +22,6 @@ def checkIfProcessRunning(processName):
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
     return False;
-
-# startup
-
-os.system('title Loading...')
 
 # menu
 
