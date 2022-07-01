@@ -1,6 +1,6 @@
 # ServerRunner
 * A Minecraft Server Runner Tool Written in Python
-* Join to our Discord for any help https://discord.gg/MfJ2R7ZzhM
+* Join our Discord for any help https://discord.gg/MfJ2R7ZzhM
 
 # Setup
 
@@ -9,8 +9,8 @@
 
 * Download ngrok from here
 -> https://dashboard.ngrok.com/get-started/setup
-Once you downloaded it put it in the folder, then connect your account.
-(You need email verification on ngrok, or it wont work)
+Once you have downloaded it, put it in the folder, then connect your account.
+(You need email verification on ngrok, or it won't work)
 
 * Start the installer.bat
 
@@ -19,4 +19,3 @@ Once you downloaded it put it in the folder, then connect your account.
 # Tips
 
 * If you have never used this tool, then you should start with setting up a server
-
